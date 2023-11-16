@@ -10,14 +10,14 @@ function StartingPage() {
     setTimeout(() => {
       setIsLoading(true);
       //   navigate("/");
-    }, 3700);
+    }, 2700);
   }, [navigate]);
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoadingBox(true);
       //   navigate("/");
-    }, 5700);
+    }, 4700);
   }, [isLoading]);
   return (
     <>
@@ -75,7 +75,7 @@ function StartingPage() {
             <div className="animations flex items-baseline justify-center gap-2">
               {/* ============================================================ */}
               {/* images */}
-              <span>
+              <span className="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="103"
@@ -339,7 +339,7 @@ function StartingPage() {
                     alt="Microsoft_logo"
                   />
                 </span>
-                <span className="text-[16px] font-bold text-[#FF3E5B] group-hover:text-white">
+                <span onClick={() => navigate("/dashboard")} className="text-[16px] font-bold text-[#FF3E5B] group-hover:text-white">
                   Sign in using mahindra SSO
                 </span>
               </button>

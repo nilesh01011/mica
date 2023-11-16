@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato";
 }
 
 body {
@@ -47,6 +48,11 @@ body {
   top: 0;
   bottom: 0;
   right: 0;
+}
+
+.container.SlideRight .logoContainer {
+  padding-bottom: 50px;
+  transition: all 1s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 
 .logo_2 {
@@ -104,6 +110,11 @@ body {
   opacity: 1;
   visibility: visible;
   height: max-content;
-  margin: 50px 0;
+  margin-bottom: 50px;
   transition: opacity 2.3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+
+/* mainContain */
+.tableContainer::-webkit-scrollbar {
+  display: none;
 }
