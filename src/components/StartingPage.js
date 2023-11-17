@@ -36,11 +36,11 @@ function StartingPage() {
         </div>
       ) : (
         <>
-          <div className="logo_2 w-[252px] h-[133px] z-10 fixed left-0 top-0">
+          <div className="logo_2 w-[252px] h-[133px] z-10 fixed -left-5 top-0">
             <img
               src="./images/leftSideImg.svg"
               alt="logo"
-              className="w-full h-full object-contain"
+              className="w-full h-[110px] object-contain"
             />
           </div>
           {/* left side */}
