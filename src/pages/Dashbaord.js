@@ -59,7 +59,7 @@ function Dashbaord() {
     ]
 
     return (
-        <div className='flex h-screen'>
+        <div className='flex h-screen bg-white'>
             <Sidebar />
             {/* main contains */}
             <div className='w-full h-full'>
