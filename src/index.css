@@ -74,6 +74,14 @@ body {
   transition: all 3.3s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 
+.logo_2.showMahindraLogo {
+  animation: scaleShow 0.8s ease-out;
+}
+
+.showADCLogo {
+  animation: scaleShow 1s ease-out;
+}
+
 .logo {
   position: absolute;
   top: 16px;
@@ -114,27 +122,27 @@ body {
 }
 
 #m_logo.show_m_logo {
-  animation: scaleShow 0.8s ease-out;
-  opacity: 1;
-  transition: all 0.8s ease-out;
-}
-
-#c_logo.show_c_logo {
   animation: scaleShow 1.2s ease-out;
   opacity: 1;
   transition: all 1.2s ease-out;
 }
 
-#a_logo.show_a_logo {
+#c_logo.show_c_logo {
   animation: scaleShow 1.4s ease-out;
   opacity: 1;
   transition: all 1.4s ease-out;
 }
 
-#text_logo.show_text_logo {
+#a_logo.show_a_logo {
   animation: scaleShow 1.6s ease-out;
   opacity: 1;
   transition: all 1.6s ease-out;
+}
+
+#text_logo.show_text_logo {
+  animation: scaleShow 1.8s ease-out;
+  opacity: 1;
+  transition: all 1.8s ease-out;
 }
 
 .boxs {

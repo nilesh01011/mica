@@ -43,14 +43,14 @@ function Sidebar() {
         </svg>
       ),
       key: 2,
-      items:[
+      items: [
         {
-          name:"User Management 1",
+          name: "User Management 1",
         },
         {
-          name:"User Management 2",
-        }
-      ]
+          name: "User Management 2",
+        },
+      ],
     },
     {
       name: "Master Management",
@@ -72,14 +72,14 @@ function Sidebar() {
         </svg>
       ),
       key: 3,
-      items:[
+      items: [
         {
-          name:"Master Management 1",
+          name: "Master Management 1",
         },
         {
-          name:"Master Management 2",
-        }
-      ]
+          name: "Master Management 2",
+        },
+      ],
     },
     {
       name: "Dashboard",
@@ -101,14 +101,14 @@ function Sidebar() {
         </svg>
       ),
       key: 4,
-      items:[
+      items: [
         {
-          name:"Dashboard 1",
+          name: "Dashboard 1",
         },
         {
-          name:"Dashboard 2",
-        }
-      ]
+          name: "Dashboard 2",
+        },
+      ],
     },
   ];
 
@@ -120,7 +120,7 @@ function Sidebar() {
     >
       {/* top side */}
       <div
-        className="flex items-center justify-between w-full cursor-pointer"
+        className="flex items-center justify-between w-full cursor-pointer h-[33px]"
         onClick={() => setCollapsed(!collapsed)}
       >
         {/* logo */}
@@ -299,7 +299,7 @@ function Sidebar() {
                   gradientUnits="userSpaceOnUse"
                 >
                   <stop stopColor="#E71B35" />
-                  <stop offset="1" stopColor="#E71B35" stopOpacity="0.6" />
+                  <stop offset="1" stoColor="#E71B35" stopOpacity="0.6" />
                 </linearGradient>
                 <linearGradient
                   id="paint1_linear_106_10312"
@@ -317,57 +317,104 @@ function Sidebar() {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="28"
-              viewBox="0 0 16 28"
+              width="19"
+              height="33"
+              viewBox="0 0 19 33"
               fill="none"
             >
               <path
-                d="M5.23587 17.2083H0.623413V27.124H5.23587V17.2083Z"
-                fill="url(#paint0_linear_106_10314)"
+                d="M5.61167 20.9362H0V33H5.61167V20.9362Z"
+                fill="url(#paint0_linear_207_583)"
               />
               <path
-                d="M15.5092 12.8537H10.8967V27.124H15.5092V12.8537Z"
-                fill="url(#paint1_linear_106_10314)"
+                d="M18.1104 15.6383H12.4988V33H18.1104V15.6383Z"
+                fill="url(#paint1_linear_207_583)"
               />
               <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M5.76001 8.17409V27.124H10.3725V5.45024L5.76001 8.17409ZM10.3725 1.86248C10.3725 2.62321 5.76001 4.79616 5.76001 4.79616V0H10.3725C10.3725 0 10.3725 1.10175 10.3725 1.86248Z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.24927 9.94488V33H11.8609V6.63095L6.24927 9.94488ZM11.8609 2.26596C11.8609 3.19149 6.24927 5.83517 6.24927 5.83517V0H11.8609C11.8609 0 11.8609 1.34042 11.8609 2.26596Z"
                 fill="#0B0B0C"
               />
               <defs>
                 <linearGradient
-                  id="paint0_linear_106_10314"
-                  x1="2.92964"
-                  y1="17.2083"
-                  x2="2.92964"
-                  y2="27.124"
+                  id="paint0_linear_207_583"
+                  x1="2.80584"
+                  y1="20.9362"
+                  x2="2.80584"
+                  y2="33"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#E71B35" />
-                  <stop offset="1" stopColor="#E71B35" stopOpacity="0.6" />
+                  <stop stop-color="#E71B35" />
+                  <stop offset="1" stop-color="#E71B35" stop-opacity="0.6" />
                 </linearGradient>
                 <linearGradient
-                  id="paint1_linear_106_10314"
-                  x1="13.203"
-                  y1="12.8537"
-                  x2="13.203"
-                  y2="27.124"
+                  id="paint1_linear_207_583"
+                  x1="15.3046"
+                  y1="15.6383"
+                  x2="15.3046"
+                  y2="33"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#E71B35" />
-                  <stop offset="1" stopColor="#E71B35" stopOpacity="0.6" />
+                  <stop stop-color="#E71B35" />
+                  <stop offset="1" stop-color="#E71B35" stop-opacity="0.6" />
                 </linearGradient>
               </defs>
             </svg>
           )}
+
+          {/* <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="28"
+            viewBox="0 0 16 28"
+            fill="none"
+          >
+            <path
+              d="M5.23587 17.2083H0.623413V27.124H5.23587V17.2083Z"
+              fill="url(#paint0_linear_106_10314)"
+            />
+            <path
+              d="M15.5092 12.8537H10.8967V27.124H15.5092V12.8537Z"
+              fill="url(#paint1_linear_106_10314)"
+            />
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M5.76001 8.17409V27.124H10.3725V5.45024L5.76001 8.17409ZM10.3725 1.86248C10.3725 2.62321 5.76001 4.79616 5.76001 4.79616V0H10.3725C10.3725 0 10.3725 1.10175 10.3725 1.86248Z"
+              fill="#0B0B0C"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_106_10314"
+                x1="2.92964"
+                y1="17.2083"
+                x2="2.92964"
+                y2="27.124"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#E71B35" />
+                <stop offset="1" stopColor="#E71B35" stopOpacity="0.6" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_106_10314"
+                x1="13.203"
+                y1="12.8537"
+                x2="13.203"
+                y2="27.124"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#E71B35" />
+                <stop offset="1" stopColor="#E71B35" stopOpacity="0.6" />
+              </linearGradient>
+            </defs>
+          </svg> */}
         </span>
         {/* arrow icons */}
         <span
           style={{
             color: collapsed === true ? "#FF3E5B" : "black",
-            transform:`${collapsed === true ? "" : "rotate(180deg)"}`
+            transform: `${collapsed === true ? "" : "rotate(180deg)"}`,
           }}
         >
           <svg
@@ -387,7 +434,8 @@ function Sidebar() {
         </span>
       </div>
       {/* menu items */}
-      <div className={`${collapsed === true ? "mt-[26px]" : "mt-[40px]"}`}>
+      {/* ${collapsed === true ? "mt-[26px]" : "mt-[40px]"} */}
+      <div className={`${collapsed === true ? "mt-[30px]" : "mt-[39px]"}`}>
         <ul className="flex flex-col gap-[10px]">
           {menuItems.map((ele, index) => (
             <MenuItems
